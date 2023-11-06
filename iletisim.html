@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/iconn.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>İLETİŞİM</title>
+</head>
+<body>
+
+    <!--HEADER SECTİON START-->
+    <header class="header">
+        <a href="#">
+            <img src="../img/logoo.png" alt="logo" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="../html/index.html">Ana Sayfa</a>
+            <a href="../html/hakkimizda.html">Hakkımızda</a>
+            <a href="../html/menu.html">Menü</a>
+            <a href="../html/urunler.html">Ürünler</a>
+            <a href="../html/yorumlar.html">Yorumlar</a>
+            <a href="../html/iletisim.html" class="active">İletişim</a>
+            <a href="../html/blog.html">Blog</a>
+        </nav>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>                    <!--arama işaretine basınca arama inputu gelecek-->
+        <div class="search-form"> <!--js ile active classı ekleyeceğiz-->
+            <input type="text" class="search-input" id="search-box" placeholder="buradan ara"/>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container"> <!--js ile classına active vereceğiz-->
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/gelato.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/menu4.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/menu1.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/browni2.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <a href="" class="btn">Şimdi Ödeme Yap</a>
+        </div>
+    </header>
+        <!--HEADER SECTİON END-->
+
+        <!--İLETİŞİM SECTİON START-->
+        <section class="contact">
+            <h1 class="heading">Bize Ulaşın</h1>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d789217.7628139033!2d28.84995971638417!3d39.404178170080186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c94bb53b280f3f%3A0x78a02b938ebd9c43!2zS8O8dGFoeWEgTWVya2V6L0vDvHRhaHlh!5e0!3m2!1str!2str!4v1683577325946!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form>
+                    <h3>İletişime Geç</h3>
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="ad">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="e-posta">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="number" placeholder="telefon">
+                    </div>
+                    <input type="submit" class="btn" value="Gönder">
+                </form>
+            </div>
+        </section>
+        <!--İLETİŞİM SECTİON END-->
+
+        <!--FOOTER SECTİON START-->
+        <section class="footer">
+            <div class="search">
+                <input type="text" class="search-input">
+                <button class="btn btn-primary">Ara</button>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+            <div class="links">
+                <a href="../html/index.html">Ana Sayfa</a>
+                <a href="../html/hakkimizda.html">Hakkımızda</a>
+                <a href="../html/menu.html">Menü</a>
+                <a href="../html/urunler.html">Ürünler</a>
+                <a href="../html/yorumlar.html">Yorumlar</a>
+                <a href="../html/iletisim.html">İletişim</a>
+                <a href="../html/blog.html">Blog</a>
+            </div>
+            <div class="created">
+                <span>EFE Tasarım ©</span> tarafından yapıldı. | Tüm hakları saklıdır.
+            </div>
+        </section>
+        <!--FOOTER SECTİON END-->
+
+    
+
+        <script src="../js/app.js"></script>
+</body>
+</html>

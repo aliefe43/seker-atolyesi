@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/iconn.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>ÜRÜNLER</title>
+</head>
+<body>
+
+    <!--HEADER SECTİON START-->
+    <header class="header">
+        <a href="#">
+            <img src="../img/logoo.png" alt="logo" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="../html/index.html">Ana Sayfa</a>
+            <a href="../html/hakkimizda.html">Hakkımızda</a>
+            <a href="../html/menu.html">Menü</a>
+            <a href="../html/urunler.html" class="active">Ürünler</a>
+            <a href="../html/yorumlar.html">Yorumlar</a>
+            <a href="../html/iletisim.html">İletişim</a>
+            <a href="../html/blog.html">Blog</a>
+        </nav>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>                    <!--arama işaretine basınca arama inputu gelecek-->
+        <div class="search-form"> <!--js ile active classı ekleyeceğiz-->
+            <input type="text" class="search-input" id="search-box" placeholder="buradan ara"/>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container"> <!--js ile classına active vereceğiz-->
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/gelato.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/menu4.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/menu1.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="../img/browni2.jpg" alt="menu">
+                <div class="content">
+                    <h3>cart item 1</h3>
+                    <div class="price">75 TL</div>
+                </div>
+            </div>
+            <a href="" class="btn">Şimdi Ödeme Yap</a>
+        </div>
+    </header>
+        <!--HEADER SECTİON END-->
+
+        <!--ÜRÜNLER SECTİON START-->
+        <section class="products">
+            <h1 class="heading">ÜRÜNLER</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title">SÜTLÜ ÜRÜN</span>
+                        <a href="#" class="name">Gelato</a>
+                    </div>
+                    <div class="image">
+                        <img src="../img/gelato.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">99.00 TL</b>
+                            <span class="amount">110 gr / 300 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title">MEYVELİ ÜRÜN</span>
+                        <a href="#" class="name">Red Velvet</a>
+                    </div>
+                    <div class="image">
+                        <img src="../img/velvet.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">99.00 TL</b>
+                            <span class="amount">110 gr / 300 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-dark">
+                    <div class="box-head">
+                        <span class="title">ÇİKOLATALI ÜRÜN</span>
+                        <a href="#" class="name">Browni</a>
+                    </div>
+                    <div class="image">
+                        <img src="../img/browni2.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">99.00 TL</b>
+                            <span class="amount">110 gr / 300 Cal</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ÜRÜNLER SECTİON END-->
+
+        <!--FOOTER SECTİON START-->
+        <section class="footer">
+            <div class="search">
+                <input type="text" class="search-input">
+                <button class="btn btn-primary">Ara</button>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+            <div class="links">
+                <a href="../html/index.html">Ana Sayfa</a>
+                <a href="../html/hakkimizda.html">Hakkımızda</a>
+                <a href="../html/menu.html">Menü</a>
+                <a href="../html/urunler.html">Ürünler</a>
+                <a href="../html/yorumlar.html">Yorumlar</a>
+                <a href="../html/iletisim.html">İletişim</a>
+                <a href="../html/blog.html">Blog</a>
+            </div>
+            <div class="created">
+                <span>EFE Tasarım ©</span> tarafından yapıldı. | Tüm hakları saklıdır.
+            </div>
+        </section>
+        <!--FOOTER SECTİON END-->
+
+    
+
+        <script src="../js/app.js"></script>
+</body>
+</html>
